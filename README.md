@@ -1,50 +1,31 @@
-# Welcome to your Expo app 👋
+# Expense Tracker App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um aplicativo de rastreamento de despesas desenvolvido em React Native. Ele permite que o usuário registre, visualize e acompanhe as despesas em um gráfico, utilizando armazenamento local para manter o histórico dos lançamentos.
 
-## Get started
+## Funcionalidades
 
-1. Install dependencies
+- **Cadastro de Despesas**: Registra o valor, a descrição e a data de cada despesa.
+- **Visualização de Histórico**: Exibe uma lista de despesas com data, descrição e valor.
+- **Gráfico de Resumo**: Gera um gráfico das despesas diárias acumuladas para uma visualização mais fácil dos gastos.
+- **Armazenamento Local**: Utiliza AsyncStorage para salvar e carregar os dados das despesas, persistindo-os localmente.
 
+## Tecnologias e Dependências
+
+- **React Native**: Framework para desenvolvimento mobile multiplataforma.
+- **react-native-chart-kit**: Biblioteca de gráficos para exibir os dados das despesas.
+- **moment**: Biblioteca para manipulação e formatação de datas.
+- **@react-navigation**: Navegação entre telas.
+- **@react-native-async-storage/async-storage**: Armazenamento de dados no dispositivo.
+
+## Estrutura dos Componentes
+
+- **AppNavigator**: Configura a navegação entre as telas de despesas e resumo.
+- **ExpenseScreen**: Tela principal para adicionar novas despesas e visualizar a lista.
+- **SummaryScreen**: Tela de resumo que exibe o gráfico com o total acumulado de despesas por dia.
+
+## Como Executar o Projeto
+
+1. **Clone o Repositório**:
    ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   git clone <URL_DO_REPOSITORIO>
+   cd <NOME_DO_DIRETORIO>
